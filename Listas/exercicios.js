@@ -58,7 +58,7 @@ function listarProdutosPorRotatividade(rotatividade) {
 
 // 4- Crie uma função que liste todos os produtos com base na seleção de rotatividade (alta, média ou baixa) e curva ABC (A, B ou C) pelo usuário.
 
-function listarCurvaRotatividade(rotatividade, curva, estoque){
+function listarCurvaRotatividade(rotatividade, curva){
     let selecaoProdutos = produtos.filter((produto) => produto.rotatividade == rotatividade && produto.curva_abc == curva);
     return selecaoProdutos;
 }
@@ -92,7 +92,7 @@ function adicionarProduto(novoProduto){
 
 }
 
-adicionarProduto({id: produtos.length + 1, nome: "Papel Toalha", preco_venda: , preco_compra: 8, estoque: 125, rotatividade: "alta", curva_abc: "A",});
+adicionarProduto({id: produtos.length + 1, nome: "Papel Toalha", preco_venda: 8, preco_compra: 5.5, estoque: 125, rotatividade: "alta", curva_abc: "A",});
 
 adicionarProduto({id: produtos.length + 1, nome: "sabonete", preco_venda: 27, preco_compra: 8, estoque: 125, rotatividade: "alta", curva_abc: "A",});
 
@@ -100,10 +100,10 @@ adicionarProduto({id: produtos.length + 1, nome: "sabonete", preco_venda: 27, pr
 
 // 9- Crie uma função que permita ao usuário remover um produto do estoque, solicitando o id a ser removido.
 
-function deletarprodutoiD(id){
-    let produtoBuscado = produtos.find((produto) => produto.id === id);
-    return produtoBuscado;
-}
-console.table(deletarprodutoiD(48))
+//function deletarprodutoiD(id){
+//    let produtoBuscado = produtos.find((produto) => produto.id === id);
+//    return produtoBuscado;
+//}
+//console.table(deletarprodutoiD(48))
 
 // 10- Crie uma função que permita ao usuário atualizar as informações de um produto existente no estoque, solicitando o id do produto e as novas informações a serem atualizadas. 

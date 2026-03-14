@@ -101,14 +101,27 @@ export let produtos = [
   { id: 100, nome: "Filme de PVC", preco_venda: 6.0, preco_compra: 3.5, estoque: 80, rotatividade: "media", curva_abc: "C" },
 ];
 
-//console.table(produtos);
 
-//let estoque = produtos.filter(produto=> produto.estoque<= 50);
+//produtos.push({ id: 101, nome: "Água de Coco", preco_venda: 1.59, preco_compra: .80, estoque: 500, rotatividade:"alta", curva_abc: "B"});
 
-//console.table(estoque)
+//produtos.splice(13,1);
 
-// let estoqueFind = produtos.find((produto) => produto.estoque <=50);
-// console.log(estoqueFind);
+//let nome = produtos.map((produto) => produto.nome) 
 
-// let estoqueFind = produtos.find((produto) => produto.id = 45);
-// console.log(estoqueFind);
+//let desconto = produtos.map((produto => ({ ...produto, desconto: produto.preco_venda*0.9 })))
+
+//let estoqueBaixo = produtos.filter((produto) => produto.estoque <= 50 && produto.rotatividade === "alta" && produto.curva_abc === "A");
+
+//console.table(estoqueBaixo)
+
+//let custoEstoque = produtos.reduce((acumulador, produto) => acumulador + (produto.preco_compra * produto.estoque), 0 );
+
+//console.log(custoEstoque.toLocaleString("pt-br", {style: "currency", currency: "BRL" }));
+
+//let custoValor = produtos.reduce((acumulador, produto) => acumulador + ((produto.preco_venda - produto.preco_compra) * produto.estoque), 0 );
+//let estoque = produtos.reduce ((acumulador, produto) => acumulador + produto.estoque, 0 )
+//let valorMedio = produtos.reduce((acumulador, produto) => (acumulador ) )
+
+//console.log("Lucro = " + custoValor.toLocaleString("pt-br", {style: "currency", currency: "BRL" }));
+//console.log("A quantidade de itens em estoque é igual a " + estoque)
+
